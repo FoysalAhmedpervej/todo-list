@@ -1,0 +1,62 @@
+body {
+    background-image: url('/images/nature-1.jpg');  
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%;   
+}
+
+
+#header{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#main{
+    display: flex;
+    padding: 20px;
+    color: white;
+    align-items: baseline;
+    justify-content: center;
+    gap: 150px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+li{
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding-inline: 20px;
+}
+
+button{
+    border: none;
+    border-radius: 15%;
+    margin-left: 10px;
+}
+button:hover{
+    border: 2px solid black;
+}
+
+#completed{
+    text-decoration: line-through;
+    color: gray;
+  }
+  

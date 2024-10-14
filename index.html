@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list </title>
+    <script type="module" crossorigin="anonymous" src="js/to-do.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="w-full p-7 flex justify-center items-center">
+            <h2 class="text-3xl font-extrabold text-red-600 font-serif">Todo List</h2>
+        </div>
+    </header>
+   <main id="main" class="w-full flex flex-col md:flex-row gap-20 justify-center text-white px-9">
+    <div id="Container" class="w-full md:w-1/2 flex flex-col justify-center items-center">
+        <h3>Must Do</h3>
+            <ul id="todo-list-container">
+                <li>
+                    <h4>Salat</h4>
+                    <ol id="salat-container" type="a" class="w-full mx-auto flex flex-col gap-2">
+                       
+                    </ol>
+                </li>
+                <li>Study<input type="checkbox"></li>
+                <br>
+            </ul>
+            <input id="addTask" type="Text" placeholder="Add task"><button onclick="displayTask()">Add</button>
+
+    </div>
+    <div class="w-full md:w-1/2">
+        <h3>Completed Tasks</h3>
+        <ul id="completed-container">
+
+        </ul>
+       
+    </div>
+   </main>
+  
+</body>
+</html>
