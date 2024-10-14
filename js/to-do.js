@@ -13,7 +13,7 @@ const displaySalat = (waqts) => {
         const list = document.createElement('li');
         list.id = salat;
         list.innerHTML = `
-        ${salat}<input onclick='completed('${salat}')' type="checkbox">
+        ${salat}<input onclick='completed("${salat}")' type="checkbox">
         `;
         container.append(list);
         //console.log(salat);
@@ -26,7 +26,7 @@ const displayTask = () => {
     const list = document.createElement('li');  
     list.id = task;
     list.innerHTML = `
-    ${task}<input onclick='completed('${task}')' type="checkbox">
+    ${task}<input onclick='completed("${task}")' type="checkbox">
     `;
     container.append(list);
     //console.log(list, task);
@@ -34,12 +34,17 @@ const displayTask = () => {
   
 
 const completed = (task) => {
+    let task2 = 0;
+    if(task === task2 ){
+        return;
+    }
     const container = document.getElementById('completed-container');
     const list = document.createElement('li');
     list.id = 'completed';
     list.innerText = task;
-   // container.append(list);
+    container.append(list);
     console.log(container,list);
+    task2 = task;
 }
 
 

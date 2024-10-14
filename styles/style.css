@@ -58,5 +58,11 @@ button:hover{
 #completed{
     text-decoration: line-through;
     color: gray;
+    background-color: aqua;
   }
   
+#completed-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
